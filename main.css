@@ -175,8 +175,8 @@ span {
 }
 .footer {
   margin-top: 150px;
-  background-color: rgba(0, 0, 0, 0.75);
-  color: #9e9898;
+  background-color: aliceblue;
+  color: black;
   padding-top: 55px;
   padding-bottom: 25px;
   font-size: 14px;
@@ -194,7 +194,7 @@ span {
   width: 200px;
 }
 .footer .footer-header {
-  color: #c7c1c1;
+  color: rgba(0, 0, 0, 0.5);
   letter-spacing: 1px;
   text-transform: uppercase;
   margin-bottom: 14px;
@@ -202,7 +202,7 @@ span {
   font-weight: 600;
 }
 .footer .footer-items {
-  border-right: 1px solid #fff;
+  border-right: 1px solid rgba(0, 0, 0, 0.5);
   min-height: 102px;
 }
 .footer .footer-items li {
@@ -217,7 +217,7 @@ span {
   border-right: 0px solid;
 }
 .footer .copyright {
-  color: #fff;
+  color: black;
   margin-top: 70px;
   margin-left: 5px;
   font-size: 12px;

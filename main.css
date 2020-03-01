@@ -176,7 +176,7 @@ span {
 .footer {
   margin-top: 150px;
   background-color: aliceblue;
-  color: black;
+  color: #212529;
   padding-top: 55px;
   padding-bottom: 25px;
   font-size: 14px;
@@ -213,11 +213,18 @@ span {
   font-weight: 300;
   list-style: none;
 }
+.footer .footer-items li a {
+  text-decoration: none;
+  color: #212529;
+}
+.footer .footer-items li a:hover {
+  opacity: 0.8;
+}
 .footer .soc-block {
   border-right: 0px solid;
 }
 .footer .copyright {
-  color: black;
+  color: #212529;
   margin-top: 70px;
   margin-left: 5px;
   font-size: 12px;

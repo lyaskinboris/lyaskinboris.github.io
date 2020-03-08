@@ -19,7 +19,7 @@
   box-shadow: 0 2px 20px #ccc;
 }
 .price-head {
-  background-color: rgba(0, 0, 0, 0.75);
+  background-color: #0FAC9E;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -37,7 +37,7 @@
   text-transform: uppercase;
 }
 .price-head p {
-  color: #ccc;
+  color: #eceaea;
   font-size: 25px;
   font-weight: bold;
   line-height: 30px;
@@ -76,7 +76,7 @@ span {
   width: 100%;
 }
 .buy-btn {
-  background-color: #66615d;
+  background-color: #0FAC9E;
   border-radius: 3px;
   color: #fff;
   display: inline-block;
@@ -86,11 +86,15 @@ span {
 }
 .buy-btn:hover {
   border-color: 1px solid #fff;
-  background-color: #857f79;
+  opacity: 0.8;
 }
 .price-bottom a {
   text-decoration: none !important;
   color: #fff !important;
+}
+.circle-icon {
+  height: 20px;
+  margin-right: 8px;
 }
 .insta {
   background-image: url(96f7cbc77c6728a3f7d15b73a43db457.jpg);
@@ -130,15 +134,15 @@ span {
 }
 .header .right-menu li {
   display: inline-block;
-  margin-top: 30px !important;
+  margin-top: 20px !important;
 }
-.header .right-menu li .fa {
-  font-size: 20px;
+.header .right-menu li img {
+  width: 20px;
   margin: 0 10px auto;
   cursor: pointer;
 }
-.header .right-menu li .fa:hover {
-  opacity: 0.8;
+.header .right-menu li img:hover {
+  opacity: 0.7;
 }
 .header .navbar-brand {
   left: 50%;
@@ -153,15 +157,23 @@ span {
 .header .navbar {
   z-index: 99999;
   padding: 5px 35px !important;
+  background-color: #f0f8ff;
+  height: 60px;
 }
 .header .navbar .nav-link {
   font-weight: 600;
   font-size: 16px;
   padding-bottom: 5px;
 }
-.header .navbar .nav-link:hover {
+.header .navbar .nav-link:hover,
+.header .navbar .nav-link .active {
   padding-bottom: 3px;
   border-bottom: 2px solid #f992a6;
+}
+@media only screen and (max-width: 991px) {
+  .header .navbar {
+    height: auto;
+  }
 }
 .header .navbar-toggler {
   border: 0 !important;
@@ -169,13 +181,13 @@ span {
   padding: 0 !important;
   cursor: pointer;
 }
-.header .navbar-toggler .fa {
-  font-size: 30px;
+.header .navbar-toggler img {
+  width: 30px;
   cursor: pointer;
 }
 .footer {
   margin-top: 150px;
-  background-color: aliceblue;
+  background-color: #F0F8FF;
   color: #212529;
   padding-top: 55px;
   padding-bottom: 25px;
@@ -185,9 +197,9 @@ span {
   text-align: left;
   padding-top: 20px;
 }
-.footer .footer-box .fa {
+.footer .footer-box img {
   margin: 0 10px auto;
-  font-size: 15px;
+  width: 15px;
   cursor: pointer;
 }
 .footer .footer-logo {
@@ -273,6 +285,9 @@ span {
 .team {
   color: #555;
 }
+.team a:hover {
+  text-decoration: none;
+}
 .team h1 {
   text-align: center;
   color: #212529 !important;
@@ -333,6 +348,45 @@ span {
   font-size: 15px;
   font-weight: bold;
   margin-top: 15px;
+}
+.navigate-mobile {
+  display: none;
+}
+.carousel-multi-item-2 .card img {
+  border-radius: 2px;
+}
+.controls-top {
+  text-align: center;
+  margin-bottom: 12px;
+}
+.arrow {
+  width: 40px;
+}
+.carousel-wrapper {
+  display: flex;
+  align-items: center;
+}
+.more-info-btn {
+  background-color: #0FAC9E;
+  color: #fff !important;
+}
+@media (min-width: 768px) {
+  .carousel-multi-item-2 .col-md-3 {
+    float: left;
+    width: 25%;
+    max-width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  .carousel-wrapper {
+    display: block;
+  }
+  .navigate-icon {
+    display: none;
+  }
+  .navigate-mobile {
+    display: block;
+  }
 }
 .banner {
   position: relative;
